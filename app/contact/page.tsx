@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import { Navigation } from "@/components/navigation"
-import { Footer } from "@/components/footer"
 import { motion } from "framer-motion"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
