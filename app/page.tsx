@@ -27,7 +27,7 @@ export default function Home() {
     <StatsWithProgress/>  
        <BeforeAfterSlider /> 
       
-      {/* <ServicesSection /> */}
+      <ServicesSection />
        <WhyChooseUs />
       <Gallery />
       <Testimonials /> 
