@@ -19,7 +19,9 @@ const menuItems: MenuItem[] = [
   { icon: <Users className="h-5 w-5" />, label: "About Us", href: "/about", iconColor: "text-black" },
   { icon: <Briefcase className="h-5 w-5" />, label: "Services", href: "/services", iconColor: "text-black" },
   { icon: <FolderOpen className="h-5 w-5" />, label: "Projects", href: "/projects", iconColor: "text-black" },
+    { icon: <Users className="h-5 w-5" />, label: "Client", href: "/client", iconColor: "text-black" },
   { icon: <Phone className="h-5 w-5" />, label: "Contact Us", href: "/contact", iconColor: "text-black" },
+
 ]
 
 const navItemVariants = {

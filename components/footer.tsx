@@ -134,7 +134,7 @@ export function Footer() {
               Contact Info
             </h4>
             <div className="space-y-3 text-muted-foreground text-sm">
-              <ContactItem icon={MapPin} text="PS ABACUS, 640, 6th Floor, Plot No: II E/23, AA IIE, Newtown, Kolkata-700161" />
+              <ContactItem icon={MapPin} text="Ecospace Buisness Towers, 5A-1105, AA II, Newtown, Kolkata, Chakpachuria, West Bengal 700160" />
               <ContactItem icon={Phone} text="+91 8697891111" />
               <ContactItem icon={Globe} text="www.evernaldecor.com" />
               <ContactItem icon={Mail} text="info@evernaldecor.com" />

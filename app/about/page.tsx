@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Users, Award, Clock, Heart } from "lucide-react"
 import { motion } from "framer-motion"
 import { TrendingUp, Brush, Layers, Smile } from "lucide-react"
+import { useEffect, useState } from "react"
 const cardData = [
   {
     icon: <TrendingUp className="h-6 w-6" />,
@@ -31,6 +32,25 @@ const cardData = [
 
 
 export default function About() {
+  const [isClient, setIsClient] = useState(false)
+  
+  useEffect(() => {
+    setIsClient(true)
+  }, [])
+
+  // Brand data with image paths
+  const brands = [
+    { name: "Greenply", logo: "/about_img/Greenply_logo.png" },
+    { name: "Century", logo: "/about_img/century-logo.png" },
+    { name: "Godrej", logo: "/about_img/Godrej_Logo.png" },
+    { name: "Hettich", logo: "/about_img/Logo_of_Hettich.png" },
+    { name: "SaintGobin", logo: "/about_img/SentGobin_logo.png" },
+    { name: "Jindal", logo: "/about_img/Jindal_logo.png" },
+    { name: "Centuryply", logo: "/about_img/Centuryply_logo.png" },
+    { name: "Febocol", logo: "/about_img/fevicol-logo.png" },
+    { name: "Pidilite", logo: "/about_img/pidilite-logo.png" },
+  ];
+
   return (
     <main className="min-h-screen">
       <Navigation />
@@ -64,10 +84,10 @@ export default function About() {
         Our Story
       </h2>
       <p className="text-muted-foreground mb-6 leading-relaxed">
-        Founded by visionary designer <span className="font-semibold text-[var(--brown-bramble)] dark:text-[var(--yellow-metal)]">Gulam Rasul</span>, Evernal Decor was born with a dream: to craft breathtaking spaces that blend modern elegance, functional precision, and timeless creativity.
+        Founded by visionary designer <span className="font-semibold text-[var(--brown-bramble)] dark:text-[var(--yellow-metal)]">Golam Ahamed Rosul</span>, Evernal Decor was born with a dream: to craft breathtaking spaces that blend modern elegance, functional precision, and timeless creativity.
       </p>
       <p className="text-muted-foreground mb-6 leading-relaxed">
-        Under the expert leadership of <span className="font-semibold text-[var(--brown-bramble)] dark:text-[var(--yellow-metal)]">Gulam Rasul</span>, we have grown from a passionate boutique firm to a full-service interior design powerhouse. Every project reflects not just design — but also emotions, stories, and experiences tailored to our clients' lifestyles.
+        Under the expert leadership of <span className="font-semibold text-[var(--brown-bramble)] dark:text-[var(--yellow-metal)]">Golam Ahamed Rosul</span>, we have grown from a passionate boutique firm to a full-service interior design powerhouse. Every project reflects not just design — but also emotions, stories, and experiences tailored to our clients' lifestyles.
       </p>
    
       <p className="text-muted-foreground leading-relaxed">
@@ -78,12 +98,14 @@ export default function About() {
 <div className="relative border border-[#8c5c05] rounded-lg p-2">
   <img
     src="/ownerimage.jpeg?height=600&width=500"
-    alt="Our founder Gulam Rasul"
+    alt="Our founder Golam Ahamed Rosul"
     className="rounded-lg shadow-xl glassmorphic"
   />
 </div>
   </motion.div>
 </section>
+
+{/* Brands Section */}
 
 
       {/* Values Section */}
@@ -190,7 +212,7 @@ export default function About() {
         Why Choose Us
       </h2>
       <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-        Here’s what sets Evernal Decor apart and makes us the right choice for your next transformation.
+        Here's what sets Evernal Decor apart and makes us the right choice for your next transformation.
       </p>
     </motion.div>
 
@@ -248,6 +270,28 @@ export default function About() {
 </section>
 
 
+
+{/* Add CSS for infinite scroll animation */}
+<style jsx>{`
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll {
+    display: flex;
+    animation: scroll 30s linear infinite;
+    width: max-content;
+  }
+  
+  .animate-scroll:hover {
+    animation-play-state: paused;
+  }
+`}</style>
      
     </main>
   )

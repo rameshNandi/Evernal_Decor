@@ -8,12 +8,15 @@ import "swiper/css/autoplay";
 import Image from "next/image";
 
 const clients = [
-  { name: "Modern Homes Inc", logo: "/images/clients/kfc.png" },
-  { name: "Corporate Spaces", logo: "/images/clients/ruby.jpg" },
-  { name: "Boutique Restaurants", logo: "/images/clients/idfc.png" },
-  { name: "Elite Residences", logo: "/images/clients/bigbasket.png" },
-  { name: "Commercial Properties", logo: "/images/clients/saburi.png" },
-  { name: "Premium Offices", logo: "/images/clients/Bosch-logo.png" },
+  { name: "Greenply", logo: "/about_img/Greenply_logo.png" },
+    { name: "Century", logo: "/about_img/century-logo.png" },
+    { name: "Godrej", logo: "/about_img/Godrej_Logo.png" },
+    { name: "Hettich", logo: "/about_img/Logo_of_Hettich.png" },
+    { name: "SaintGobin", logo: "/about_img/SentGobin_logo.png" },
+    { name: "Jindal", logo: "/about_img/Jindal_logo.png" },
+    { name: "Centuryply", logo: "/about_img/Centuryply_logo.png" },
+    { name: "Febocol", logo: "/about_img/fevicol-logo.png" },
+    { name: "Pidilite", logo: "/about_img/pidilite-logo.png" },
 ];
 
 export function ClientLogos() {
