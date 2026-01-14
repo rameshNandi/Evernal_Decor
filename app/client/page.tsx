@@ -206,7 +206,7 @@ export default function ClientsPage() {
             viewport={{ once: true }}
           >
             <h2 className="text-4xl font-bold text-[var(--brown-bramble)] dark:text-[var(--yellow-metal)] mb-4">
-             xfghjhkgcch
+              Brands we are working with
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Partnering with India's leading companies to bring you the finest materials and innovative solutions
