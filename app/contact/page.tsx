@@ -16,7 +16,7 @@ import { sendContactForm } from "@/app/actions/contact"
 const LOCATIONS = [
   {
     city: "Kolkata",
-    address: "PS Abacus, 640, Diplomatic Enclave, Action Area IIE, Newtown, Kolkata, New Town, West Bengal 700157",
+    address: "Ecospace Buisness Towers, 5A-1105, AA II, Newtown, Kolkata, Chakpachuria, West Bengal 700160",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.5884559497367!2d88.4611364!3d22.6189981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89f7d6386d757%3A0x62eb713984ef7a28!2sEvernal%20Decor!5e1!3m2!1sen!2sin!4v1751460174832!5m2!1sen!2sin"
   },
   {
